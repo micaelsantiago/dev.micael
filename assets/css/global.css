@@ -1,0 +1,45 @@
+:root {
+  --color-background: #222121;
+  --color-background-header: #272626;
+  --box-shadow-header: #3f3f3f;
+  --color-border-menu-item: var(--color-primary);
+  --color-primary: #C0FF3B;
+  --color-text: #FDFCF3;
+  --color-text-light: #bdbdbd;
+  --color-row-menu: #FFFFFF;
+
+  --font-family: 'Inter', sans-serif;
+
+  --max-width: 1400px;
+  --header-logo-width: 215px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--color-background);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*  REUSABLE CLASSES */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}

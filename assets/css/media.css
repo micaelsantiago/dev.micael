@@ -1,0 +1,36 @@
+@media (min-width: 768px) {
+  .header-container .header-menu .menu-mobile {
+    display: none;
+  }
+
+  .header-container .menu-items {
+    opacity: 1;
+    position: inherit;
+    height: auto;
+    padding: 0;
+  }
+
+  .header-container .menu-items ul {
+    flex-direction: row;
+    margin: 0;
+    gap: 2rem;
+  }
+
+  .header-container .menu-items ul li::before {
+    border: none;
+    margin: 0;
+  }
+
+  .header-container .menu-items ul li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: var(--color-border-menu-item);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .header-container .menu-items ul li:hover::after {
+    width: 100%;
+  }
+}
