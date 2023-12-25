@@ -1,17 +1,43 @@
 :root {
   --color-background: #222121;
   --color-background-header: #272626;
-  --box-shadow-header: #3f3f3f;
   --color-border-menu-item: var(--color-primary);
   --color-primary: #C0FF3B;
+  --color-button: #c1ff3bc0;
+  --color-button-active: #90d103;
   --color-text: #FDFCF3;
+  --color-title-color: #FDFCF3;
   --color-text-light: #bdbdbd;
   --color-row-menu: #FFFFFF;
-
+  
   --font-family: 'Inter', sans-serif;
-
-  --max-width: 1400px;
+  
+  --max-width: 1200px;
   --header-logo-width: 215px;
+
+  --box-shadow-header: #3f3f3f;
+
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
 }
 
 * {
@@ -22,7 +48,9 @@
 
 body {
   font-family: var(--font-family);
+  font-size: var(--normal-font-size);
   background: var(--color-background);
+  color: var(--color-text);
 }
 
 a {
@@ -38,8 +66,25 @@ img {
   max-width: 100%;
 }
 
+h1, h2, h3, h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+}
+
+p {
+  font-size: var(--small-font-size);
+}
+
 /*  REUSABLE CLASSES */
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
+}
+
+.section {
+  padding: 18px;
 }

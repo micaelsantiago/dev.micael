@@ -60,7 +60,7 @@ header {
 
 .header-container .menu-items.active {
   opacity: 1;
-  height: 150px;
+  height: 175px;
   transition: opacity 0.4s ease-out, height 0.4s ease-out;
 }
 
@@ -86,4 +86,46 @@ header {
 .header-container .menu-items ul li a:hover {
   color: var(--color-text);
   transition: all 0.2s ease-in-out;
+}
+
+.presentation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - 131px);
+}
+
+.presentation-container .presentation-text {
+  text-align: center;
+  max-width: 600px;
+}
+
+.presentation-container .presentation-text h1 span {
+  color: var(--color-primary);
+}
+
+.presentation-container .presentation-text p {
+  margin: 36px 0;
+  font-size: var(--normal-font-size);
+  color: var(--color-text-light);
+}
+
+.presentation-container .presentation-text a {
+  display: block;
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 18px;
+  background: var(--color-button);
+  font-weight: 400;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.presentation-container .presentation-text a:hover {
+  box-shadow: 0px 0px 10px var(--color-primary);
+  background: var(--color-button-active);
+}
+
+.presentation-container .presentation-logo {
+  display: none;
 }

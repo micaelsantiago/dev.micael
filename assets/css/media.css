@@ -33,4 +33,23 @@
   .header-container .menu-items ul li:hover::after {
     width: 100%;
   }
+
+  .presentation-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 9rem;
+  }
+
+  .presentation-container .presentation-text {
+    text-align: left;
+  }
+
+  .presentation-container .presentation-text a {
+    margin: 0;
+  }
+
+  .presentation-container .presentation-logo {
+    display: block;
+  }
 }
